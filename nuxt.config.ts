@@ -25,5 +25,6 @@ export default defineNuxtConfig({
   // sourcemap: { server: false, client: false },
   // devServerHandlers: [],
 
-  modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
+ // modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
+  modules: [ "@nuxtjs/tailwindcss" , 'nuxt-resend'],
 })
