@@ -27,13 +27,5 @@ export default defineNuxtConfig({
 
  // modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
   modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
-  auth: {
-    baseURL: "https://rosetech.pages.dev/api/auth",
-    provider: {
-      type: "authjs",
-    },
-  },
-  runtimeConfig: {
-    authSecret: 'my-rosetech-secret',
-  }
+  
 })

@@ -5,8 +5,8 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 
 
 export default NuxtAuthHandler({
-  secret: useRuntimeConfig().authSecret,
-
+  //secret: useRuntimeConfig().authSecret,
+  secret: '123' ,
   pages : {
     signIn : '/login'
   },
