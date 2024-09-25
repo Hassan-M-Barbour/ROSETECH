@@ -18,10 +18,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  // nitro: {
-  //   serveStatic: true,
-  //   preset: "cloudflare-pages"
-  // },
+  nitro: {
+    serveStatic: true,
+    preset: "cloudflare-pages"
+  },
   // sourcemap: { server: false, client: false },
   // devServerHandlers: [],
 
