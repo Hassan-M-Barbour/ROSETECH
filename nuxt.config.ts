@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  // ssr: false,
+   ssr: false,
   // typescript: {
   //   shim: false,
   // },
@@ -15,9 +15,9 @@ export default defineNuxtConfig({
 },
 
  
-  // build: {
-  //   transpile: ["vuetify"],
-  // },
+  build: {
+    transpile: ["vuetify"],
+  },
   // nitro: {
   //   serveStatic: true,
   //   preset: "cloudflare-pages"
@@ -28,7 +28,9 @@ export default defineNuxtConfig({
  // modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
   modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
   auth: {
-    baseURL: process.env.AUTH_ORIGIN
-   }
+    baseURL: "https://rosetech.pages.dev/api/auth",
+    provider: {
+      type: "authjs",
+    },
   
 })

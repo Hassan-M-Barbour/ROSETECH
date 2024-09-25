@@ -5,9 +5,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 
 
 export default NuxtAuthHandler({
-  secret: 'my-superb-secret',
- 
-  
+  secret: 'my-rosetech-secret',
 
   pages : {
     signIn : '/login'
