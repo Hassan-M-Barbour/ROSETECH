@@ -20,6 +20,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     serveStatic: true,
+    preset: "cloudflare-pages"
   },
   sourcemap: { server: false, client: false },
   devServerHandlers: [],
