@@ -74,7 +74,7 @@ async function handlesignOut(){
 definePageMeta({
   
   layout: 'dashboard',
-  middleware : ['auth']
+  //middleware : ['auth']
 })
 </script>
 
