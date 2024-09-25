@@ -5,7 +5,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 
 
 export default NuxtAuthHandler({
-  secret: 'my-rosetech-secret',
+  secret: useRuntimeConfig().authSecret,
 
   pages : {
     signIn : '/login'

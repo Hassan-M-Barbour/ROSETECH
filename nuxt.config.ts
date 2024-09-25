@@ -32,5 +32,8 @@ export default defineNuxtConfig({
     provider: {
       type: "authjs",
     },
+  },
+  runtimeConfig: {
+    authSecret: 'my-rosetech-secret',
   }
 })
