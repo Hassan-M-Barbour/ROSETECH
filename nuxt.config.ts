@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 
  
   build: {
-    transpile: ["vuetify"],
+   // transpile: ["vuetify"],
   },
   nitro: {
     serveStatic: true,
