@@ -2,10 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  ssr: false,
-  typescript: {
-    shim: false,
-  },
+  // ssr: false,
+  // typescript: {
+  //   shim: false,
+  // },
   app: {
     head: {
         meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
@@ -16,11 +16,11 @@ export default defineNuxtConfig({
 
  
   build: {
-   // transpile: ["vuetify"],
+    transpile: ["vuetify"],
   },
   nitro: {
-    serveStatic: true,
-    preset: "cloudflare-pages"
+    // serveStatic: true,
+    // preset: "cloudflare-pages"
   },
   sourcemap: { server: false, client: false },
   devServerHandlers: [],
