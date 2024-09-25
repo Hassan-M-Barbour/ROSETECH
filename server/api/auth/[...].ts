@@ -5,7 +5,8 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 
 
 export default NuxtAuthHandler({
-  
+  secret: 'my-superb-secret',
+
   pages : {
     signIn : '/login'
   },
