@@ -22,8 +22,8 @@ export default defineNuxtConfig({
     serveStatic: true,
     preset: "cloudflare-pages"
   },
-  sourcemap: { server: false, client: false },
-  devServerHandlers: [],
+  // sourcemap: { server: false, client: false },
+  // devServerHandlers: [],
 
   modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
 })
