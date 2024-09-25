@@ -1,4 +1,4 @@
-import GithubProvider from 'next-auth/providers/github'
+//import GithubProvider from 'next-auth/providers/github'
 import { NuxtAuthHandler } from '#auth'
 import CredentialsProvider from 'next-auth/providers/credentials'
 
@@ -11,10 +11,10 @@ export default NuxtAuthHandler({
   },
   providers: [
    
-    GithubProvider.default({
-      clientId: 'Ov23lio2uPVbIUgCNW29',
-      clientSecret: 'adceb1d986e05163218b0e8bee9ff0cbd7dafa60'
-    }),
+    // GithubProvider.default({
+    //   clientId: 'Ov23lio2uPVbIUgCNW29',
+    //   clientSecret: 'adceb1d986e05163218b0e8bee9ff0cbd7dafa60'
+    // }),
 
     CredentialsProvider.default({
         name: 'Credentials',

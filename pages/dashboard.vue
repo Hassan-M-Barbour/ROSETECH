@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import UiChildCard from '~/components/shared/UiChildCard.vue';
 
 const { status, signOut } = useAuth()
@@ -72,6 +72,7 @@ async function handlesignOut(){
 // }
 
 definePageMeta({
+  
   layout: 'dashboard',
   middleware : ['auth']
 })

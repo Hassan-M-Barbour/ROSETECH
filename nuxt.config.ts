@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-
+  ssr: false,
+  typescript: {
+    shim: false,
+  },
   app: {
     head: {
         meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
@@ -11,8 +14,15 @@ export default defineNuxtConfig({
     }
 },
 
-  modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
+ 
   build: {
     transpile: ["vuetify"],
   },
+  nitro: {
+    serveStatic: true,
+  },
+  sourcemap: { server: false, client: false },
+  devServerHandlers: [],
+
+  modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
 })
