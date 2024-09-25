@@ -26,11 +26,11 @@ export default defineNuxtConfig({
   // devServerHandlers: [],
 
  // modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
-  modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
-  auth: {
-    baseURL: "https://rosetech.pages.dev/api/auth",
-    provider: {
-      type: "authjs",
-    },
-  }
+  modules: [ "@nuxtjs/tailwindcss" , 'nuxt-resend'],
+  // auth: {
+  //   baseURL: "https://rosetech.pages.dev/api/auth",
+  //   provider: {
+  //     type: "authjs",
+  //   },
+  // }
 })
