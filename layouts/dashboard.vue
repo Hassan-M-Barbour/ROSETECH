@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { useDisplay } from "vuetify";
+//import { useDisplay } from "vuetify";
 useHead({
     title: "ROSETECH  Dashboard",
 });
 const drawer = ref(undefined || true);
 //const innerW = window.innerWidth;
-const { mdAndUp, mdAndDown } = useDisplay();
+//const { mdAndUp, mdAndDown } = useDisplay();
 onMounted(() => {
     // if (innerW < 950) {
     //     drawer.value = !drawer.value;
