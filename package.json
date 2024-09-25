@@ -15,8 +15,7 @@
     "@sidebase/nuxt-auth": "^0.5.0-rc.0",
     "nuxt": "^3.13.0",
     "vue": "latest",
-    "vue-router": "latest",
-    "vuetify": "^3.7.2"
+    "vue-router": "latest"
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
