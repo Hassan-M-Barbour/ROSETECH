@@ -10,7 +10,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 
 export default NuxtAuthHandler({
   //secret: useRuntimeConfig().authSecret,
-  secret: '123' ,
+  secret: process.env.AUTH_SECRET || 'my-auth-secret',
  
 
   pages : {

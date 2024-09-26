@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-   ssr: false,
+  // ssr: false,
   // typescript: {
   //   shim: false,
   // },
@@ -27,6 +27,15 @@ export default defineNuxtConfig({
 
  // modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
   modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
-  
+  typescript: {
+    shim: false
+  },
+  auth: {
+    isEnabled: true,
+    baseURL: process.env.AUTH_ORIGIN,
+    provider: {
+      type: 'authjs'
+    },
+  }
   
 })
