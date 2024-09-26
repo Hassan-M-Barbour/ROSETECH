@@ -12,7 +12,12 @@ export default NuxtAuthHandler({
   //secret: useRuntimeConfig().authSecret,
   secret: process.env.AUTH_SECRET || 'my-auth-secret',
  
-
+  auth: {
+    originEnvKey: 'NUXT_YOUR_ORIGIN'
+  },
+  runtimeConfig: {
+    yourOrigin: ''
+  },
   pages : {
     signIn : '/login'
   },

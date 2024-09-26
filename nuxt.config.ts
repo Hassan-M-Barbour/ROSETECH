@@ -18,24 +18,20 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  nitro: {
-    serveStatic: true,
-    preset: "cloudflare-pages"
+  ssr: true,
+  typescript: {
+    strict: false
   },
+  // nitro: {
+  //   serveStatic: true,
+  //   preset: "cloudflare-pages"
+  // },
   // sourcemap: { server: false, client: false },
   // devServerHandlers: [],
 
  // modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
   modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
-  typescript: {
-    shim: false
+  nitro: {
+    preset: 'cloudflare-pages'
   },
-  auth: {
-    isEnabled: true,
-    baseURL: process.env.AUTH_ORIGIN,
-    provider: {
-      type: 'authjs'
-    },
-  }
-  
 })
