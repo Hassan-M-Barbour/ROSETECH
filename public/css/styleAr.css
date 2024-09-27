@@ -783,6 +783,7 @@ li {
 
 .title a {
   color: inherit;
+  text-decoration: none;
 }
 
 .color1 {
@@ -2095,6 +2096,7 @@ Scroll To Top style
 
 /*Btn Style One*/
 .btn-style-one {
+  text-decoration: none;
   font-family: 'Cairo';
   position: relative;
   font-size: 15px;
@@ -2947,6 +2949,7 @@ Main Header
 }
 
 .main-menu .navigation>li>a {
+  text-decoration: none;
   position: relative;
   display: block;
   text-align: center;
@@ -3203,6 +3206,7 @@ Main Header
 }
 
 .main-headerAr .info-btn {
+  text-decoration: none;
   position: relative;
   font-size: 16px;
   padding-right: 44px;
@@ -15854,6 +15858,7 @@ Sidebar
 }
 
 .contact-info-blockAr .inner .text a {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -15898,6 +15903,7 @@ Sidebar
 }
 
 .user-linksAr li a {
+  text-decoration: none;
   position: relative;
   display: inline-block;
   color: inherit;

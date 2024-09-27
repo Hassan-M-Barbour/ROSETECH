@@ -758,6 +758,7 @@ li {
 
 .title a {
   color: inherit;
+  text-decoration: none;
 }
 
 .color1 {
@@ -2071,6 +2072,7 @@ Scroll To Top style
 
 /*Btn Style One*/
 .btn-style-one {
+  text-decoration: none;
   position: relative;
   font-size: 15px;
   line-height: 20px;
@@ -2927,6 +2929,7 @@ Main Header
 }
 
 .main-menu .navigation>li>a {
+  text-decoration: none;
   position: relative;
   display: block;
   text-align: center;
@@ -3183,6 +3186,7 @@ Main Header
 }
 
 .main-header .info-btn {
+  text-decoration: none;
   position: relative;
   font-size: 16px;
   padding-left: 44px;
@@ -15827,6 +15831,7 @@ Sidebar
 
 .contact-info-block .inner .text a {
   color: #fff;
+  text-decoration: none;
 }
 
 .contact-info-block .inner .text a:hover {
@@ -15869,6 +15874,7 @@ Sidebar
 }
 
 .user-links li a {
+  text-decoration: none;
   position: relative;
   display: inline-block;
   color: inherit;
