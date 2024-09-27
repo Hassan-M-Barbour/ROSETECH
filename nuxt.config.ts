@@ -17,6 +17,15 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  css: [
+    'swiper/css',
+    'swiper/css/navigation',
+    'swiper/css/pagination',
+    "public/css/bootstrap.min.css",
+    "public/css/style.css",
+     "public/css/styleAr.css"
+],
   
   app: {
     head: {
@@ -32,8 +41,12 @@ export default defineNuxtConfig({
   },
   
   
-  modules: [ "@nuxtjs/tailwindcss" , 'nuxt-resend'],
-  
+  modules: ["@nuxtjs/tailwindcss", 'nuxt-resend', '@nuxtjs/color-mode', "nuxt-gtag"],
+
+ 
+  gtag: {
+    id: 'G-J9F6ZT1H5X'
+  } ,
     
   
 })
