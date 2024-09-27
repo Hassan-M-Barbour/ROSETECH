@@ -8,7 +8,7 @@ const resend = new Resend("re_848rhH6R_3pTrrCysSvkyGvxMPWPsJ7E5");
 // Event Handler Function
 export default defineEventHandler(async (event) => {
   // Here, the 'event' will be the object we will pass from ContactForm.vue, with all the relevant information
-  const { name, mail, message } = await readBody(event);
+  const { name, email, message } = await readBody(event);
 
   try {
     var myArray = ['Axel', 'Matelda']; 
@@ -18,11 +18,11 @@ var rand = myArray[(Math.random() * myArray.length) | 0]
       method: "POST",
       body: {
         name: name,
-        email: mail,
+        email: email,
         message:message,
         subject:"",
         phone:"",
-   emp:rand,
+   employee:rand,
       },
     });
     await resend.emails.send({
@@ -33,7 +33,7 @@ var rand = myArray[(Math.random() * myArray.length) | 0]
       to: "barbour.hassan@gmail.com",
 
       // Let's add the users name and mail address as a subject
-      subject: `Message from ${name} (${mail})`,
+      subject: `Message from ${name} (${email})`,
 
       // The message content
       html: message,
