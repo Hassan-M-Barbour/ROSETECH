@@ -8,8 +8,8 @@ import UiChildCard from '~/components/shared/UiChildCard.vue';
 // async function handlesignOut(){
 //   await signOut()
 // }
-const contacts = ref(null);
-const contact = ref(null);
+// const contacts = ref(null);
+// const contact = ref(null);
 // const email = ref(null);
 // const emp = ref(null);
 // const editedUser = ref({
@@ -20,9 +20,12 @@ const contact = ref(null);
 // contacts.value = await getContact();
 // console.log(contacts.value);
 // Get contacts
-async function getContact() {
-  return await $fetch("/api/listContacts");
-}
+
+const contats = ref<any>({});
+  contats.value = await $fetch("/api/listContacts");
+// async function getContact() {
+//   return await $fetch("/api/listContacts");
+// }
 
 // // Add contacts
 // async function addUser(user, email) {
@@ -82,7 +85,7 @@ definePageMeta({
 
 <template>
 <v-row class="month-table">
-        <v-col cols="12" sm="12" > -->
+        <v-col cols="12" sm="12" > 
              <UiChildCard title="Contacts Table">
                 <v-table>
                     <thead>
@@ -97,19 +100,19 @@ definePageMeta({
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(contacts, index) in contacts">
+                        <tr v-for="(contact, index) in contacts">
                             <th scope="row">{{ index + 1 }}</th>
-          <td>{{ contacts.name }}</td>
-          <td>{{ contacts.email }}</td>
-          <td>{{ contacts.subject }}</td>
-          <td>{{ contacts.phone }}</td>
-          <td>{{ contacts.message }}</td>
-          <td>{{ contacts.emp }}</td>
+          <td>{{ contact.name }}</td>
+          <td>{{ contact.email }}</td>
+          <td>{{ contact.subject }}</td>
+          <td>{{ contact.phone }}</td>
+          <td>{{ contact.message }}</td>
+          <td>{{ contact.emp }}</td>
           <td>
             <button
               type="button"
               class="btn btn-danger"
-              @click="($event) =>    deleteContact(contacts.id)"
+              @click="($event) =>    deleteContact(contact.id)"
             >
               Delete
             </button>
