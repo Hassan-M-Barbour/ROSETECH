@@ -13,7 +13,7 @@ function submit(){
         body:{
             name : InputName.value,
             email : InputEmail.value,
-            Subject: InputSubject.value,
+            subject: InputSubject.value,
             phone:InputPhone.value,
             message: InputMessage.value,
             employee : InputEmployee.value
