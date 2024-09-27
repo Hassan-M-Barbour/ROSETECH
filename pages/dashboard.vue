@@ -22,7 +22,7 @@ import UiChildCard from '~/components/shared/UiChildCard.vue';
 // Get contacts
 
 const contacts = ref<any>({});
-  contats.value = await $fetch("/api/listContacts");
+  contacts.value = await $fetch("/api/listContacts");
 // async function getContact() {
 //   return await $fetch("/api/listContacts");
 // }
