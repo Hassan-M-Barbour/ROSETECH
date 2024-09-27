@@ -1,9 +1,9 @@
 <script setup>
 
-const {signOut} = useAuth()
-async function handleSignOut() {
-  await signOut()
-}
+// const {signOut} = useAuth()
+// async function handleSignOut() {
+//   await signOut()
+// }
 import LightDark from '~/components/LightDark.vue';
 
 const userprofile = ref([
@@ -38,7 +38,7 @@ const userprofile = ref([
         <!-- <v-list-item class="py-2  mb-2" v-for="(item, i) in userprofile" :key="i" :value="item" :title="item.title"
           :subtitle="item.desc" rounded="md">
         </v-list-item> -->
-        <v-btn block color="primary" class="mt-4 py-4" @click="handleSignOut" >Logout</v-btn>
+        <v-btn block color="primary" class="mt-4 py-4"  >Logout</v-btn>
       </v-list>
     </v-sheet>
   </v-menu>
