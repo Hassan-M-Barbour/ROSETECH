@@ -4,8 +4,8 @@ export default defineEventHandler(async(event) => {
      //console.log(requestBody)
      
      const db = useDatabase("myDatabase");
-     
-     const result = await db.sql`DELETE  FROM Contact WHERE id = ${requestBody.id}`;
+     let id = requestBody.id;
+     const result = await db.sql`DELETE  FROM Contact WHERE id = ${id}`;
         return result.rows;
      
      });
