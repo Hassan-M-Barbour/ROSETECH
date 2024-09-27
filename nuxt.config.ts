@@ -36,13 +36,13 @@ export default defineNuxtConfig({
 },
 
  
-  build: {
-    transpile: ["vuetify"],
-  },
+ 
   
   
   modules: ["@nuxtjs/tailwindcss", 'nuxt-resend', '@nuxtjs/color-mode', "nuxt-gtag"],
-
+  build: {
+    transpile: ["vuetify"],
+  },
  
   gtag: {
     id: 'G-J9F6ZT1H5X'
