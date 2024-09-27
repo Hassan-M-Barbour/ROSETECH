@@ -100,7 +100,7 @@ definePageMeta({
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(contact, index) in contacts">
+                        <tr v-for="(contact, index) in results">
                             <th scope="row">{{ index + 1 }}</th>
           <td>{{ contact.name }}</td>
           <td>{{ contact.email }}</td>
