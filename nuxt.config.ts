@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  // ssr: false,
+   ssr: false,
   // typescript: {
   //   shim: false,
   // },
@@ -18,20 +18,16 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  ssr: true,
-  typescript: {
-    strict: false
+  nitro: {
+    serveStatic: true,
+    preset: "cloudflare-pages"
   },
-  // nitro: {
-  //   serveStatic: true,
-  //   preset: "cloudflare-pages"
-  // },
   // sourcemap: { server: false, client: false },
   // devServerHandlers: [],
 
  // modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
-  modules: ["@sidebase/nuxt-auth", "@nuxtjs/tailwindcss" , 'nuxt-resend'],
-  nitro: {
-    preset: 'cloudflare-pages'
-  },
+  modules: [ "@nuxtjs/tailwindcss" , 'nuxt-resend'],
+  
+    
+  
 })
