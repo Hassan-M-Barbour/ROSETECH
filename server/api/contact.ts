@@ -6,7 +6,7 @@ const resend = new Resend("re_848rhH6R_3pTrrCysSvkyGvxMPWPsJ7E5");
 // Event Handler Function
 export default defineEventHandler(async (event) => {
   // Here, the 'event' will be the object we will pass from ContactForm.vue, with all the relevant information
-  const { name, email, subject , telephone, message } = await readBody(event);
+  const { name, email, subject , phone, message } = await readBody(event);
 
   try {
     var myArray = ['Axel', 'Matelda']; 
@@ -18,7 +18,7 @@ export default defineEventHandler(async (event) => {
         email: email,
         message:message,
         subject:subject,
-        phone:telephone,
+        phone:phone,
    emp:rand,
       },
     });
