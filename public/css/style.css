@@ -143,6 +143,10 @@ body {
   line-height: var(--body-line-height);
 }
 
+a {
+  text-decoration: none;
+}
+
 p,
 .text {
   color: var(--text-color);
