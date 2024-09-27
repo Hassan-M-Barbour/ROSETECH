@@ -42,21 +42,21 @@ const contats = ref<any>({});
 //   users.value=await getUsers()
 // }
 
-// // Delete contacts
-// async function deleteContact(id) {
-//    if( confirm('Are you sure?') ){
-//   let contact=null
-//   if (id)
+// Delete contacts
+async function deleteContact(id) {
+   if( confirm('Are you sure?') ){
+  let contact=null
+  if (id)
  
-//   contact= await $fetch("/api/contacts", {
-//       method: "DELETE",
-//       body: {
-//         id: id,
-//       },
-//     });
-//     if(id) contacts.value=await getContact()
-//    }
-// }
+  contact= await $fetch("/api/contacts", {
+      method: "DELETE",
+      body: {
+        id: id,
+      },
+    });
+    if(id) contacts.value=await getContact()
+   }
+}
 
 // // Update contacts
 // async function editUser(editedUser) {
@@ -100,7 +100,7 @@ definePageMeta({
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="(contacts, index) in results">
+                        <tr v-for="(contacts, index) in contacts.results">
                             <th scope="row">{{ index + 1 }}</th>
           <td>{{ contacts.name }}</td>
           <td>{{ contacts.email }}</td>
@@ -112,7 +112,7 @@ definePageMeta({
             <button
               type="button"
               class="btn btn-danger"
-              @click="($event) =>    deleteContact(contact.id)"
+              @click="($event) =>    deleteContact(contacts.id)"
             >
               Delete
             </button>
