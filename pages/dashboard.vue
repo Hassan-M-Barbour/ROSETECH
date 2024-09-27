@@ -54,7 +54,7 @@ async function deleteContact(id) {
         id: id,
       },
     });
-    if(id) contacts.value=await  $fetch("/api/listContacts");
+    if(id) contacts.value= await  $fetch("/api/listContacts");
    }
 }
 
