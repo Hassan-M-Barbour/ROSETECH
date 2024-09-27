@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
         message:message,
         subject:subject,
         phone:phone,
-   emp:rand,
+        employee:rand,
       },
     });
     
@@ -34,7 +34,7 @@ export default defineEventHandler(async (event) => {
       subject: ` ${subject} from ${name}`,
 
       // The message content
-      html: "Name:" + name + "<br>" + "Email:" + email + "<br>" + "Phone:" +telephone + "<br>" + message,
+      html: "Name:" + name + "<br>" + "Email:" + email + "<br>" + "Phone:" +phone + "<br>" + message,
     });
     // If the await if successfully, the function will return 'success: true'
     // Otherwise, it will fall into catch, and return the error object
