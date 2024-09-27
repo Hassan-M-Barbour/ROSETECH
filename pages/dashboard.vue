@@ -49,7 +49,7 @@ async function deleteContact(id) {
   if (id)
  
   contact= await $fetch("/api/deleteContact", {
-      method: "DELETE",
+      method: "POST",
       body: {
         id: id,
       },
