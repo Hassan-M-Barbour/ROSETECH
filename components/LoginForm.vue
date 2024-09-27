@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-//const { signIn } = useAuth()
+const { signIn } = useAuth()
 
 const email = ref('')
 const password = ref('')
@@ -9,8 +9,7 @@ const password = ref('')
 </script>
 
 <template>
-    <!-- <form class="space-y-4 md:space-y-6" @submit.prevent="$event => signIn('credentials' , {email , password , callbackUrl:'/dashboard'})"> -->
-      <form class="space-y-4 md:space-y-6" >
+    <form class="space-y-4 md:space-y-6" @submit.prevent="$event => signIn('credentials' , {email , password , callbackUrl:'/dashboard'})">
       <div>
         <label
           for="email"

@@ -84,10 +84,10 @@ definePageMeta({
 
 
 <template>
-<!-- <v-row class="month-table">
+<v-row class="month-table">
         <v-col cols="12" sm="12" > 
-             <UiChildCard title="Contacts Table"> -->
-                <table class="table-auto">
+             <UiChildCard title="Contacts Table">
+                <v-table>
                     <thead>
                         <tr>
                             <th class="text-left">id</th>
@@ -119,11 +119,11 @@ definePageMeta({
           </td>
                         </tr>
                     </tbody>
-                </table>
+                </v-table>
 <!-- <h1>This ia ROSETECH DASHBOARD !</h1> -->
 
 <!-- <button v-if="LoggenIn" @click="handlesignOut">Sign Out</button> -->
-            <!-- </UiChildCard>
+            </UiChildCard>
         </v-col>
-</v-row> -->
+</v-row>
 </template>
