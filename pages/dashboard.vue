@@ -48,7 +48,7 @@ async function deleteContact(id) {
   let contact=null
   if (id)
  
-  contact= await $fetch("/api/contacts", {
+  contact= await $fetch("/api/deleteContact", {
       method: "DELETE",
       body: {
         id: id,
