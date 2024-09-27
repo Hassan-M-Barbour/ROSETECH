@@ -6,7 +6,7 @@ const resend = new Resend("re_848rhH6R_3pTrrCysSvkyGvxMPWPsJ7E5");
 // Event Handler Function
 export default defineEventHandler(async (event) => {
   // Here, the 'event' will be the object we will pass from ContactForm.vue, with all the relevant information
-  const { name, mail, subject , telephone, message } = await readBody(event);
+  const { name, email, subject , telephone, message } = await readBody(event);
 
   try {
     var myArray = ['Axel', 'Matelda']; 
@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
       method: "POST",
       body: {
         name: name,
-        email: mail,
+        email: email,
         message:message,
         subject:subject,
         phone:telephone,
@@ -34,7 +34,7 @@ export default defineEventHandler(async (event) => {
       subject: ` ${subject} from ${name}`,
 
       // The message content
-      html: "Name:" + name + "<br>" + "Email:" + mail + "<br>" + "Phone:" +telephone + "<br>" + message,
+      html: "Name:" + name + "<br>" + "Email:" + email + "<br>" + "Phone:" +telephone + "<br>" + message,
     });
     // If the await if successfully, the function will return 'success: true'
     // Otherwise, it will fall into catch, and return the error object
