@@ -1,5 +1,5 @@
 <script setup lang="ts">
-//import UiChildCard from '~/components/shared/UiChildCard.vue';
+import UiChildCard from '~/components/shared/UiChildCard.vue';
 
 // const { status, signOut } = useAuth()
 
@@ -8,8 +8,8 @@
 // async function handlesignOut(){
 //   await signOut()
 // }
-// const contacts = ref(null);
-// const contact = ref(null);
+const contacts = ref(null);
+const contact = ref(null);
 // const email = ref(null);
 // const emp = ref(null);
 // const editedUser = ref({
@@ -19,10 +19,10 @@
 // })
 // contacts.value = await getContact();
 // console.log(contacts.value);
-// // Get contacts
-// async function getContact() {
-//   return await $fetch("/api/contacts");
-// }
+// Get contacts
+async function getContact() {
+  return await $fetch("/api/listContacts");
+}
 
 // // Add contacts
 // async function addUser(user, email) {
@@ -73,7 +73,7 @@
 
 definePageMeta({
   
-  //layout: 'dashboard',
+  layout: 'dashboard',
   //middleware : ['auth']
 })
 </script>
@@ -81,10 +81,10 @@ definePageMeta({
 
 
 <template>
-<!-- <v-row class="month-table">
+<v-row class="month-table">
         <v-col cols="12" sm="12" > -->
-            <!-- <UiChildCard title="Contacts Table"> -->
-                <!-- <v-table>
+             <UiChildCard title="Contacts Table">
+                <v-table>
                     <thead>
                         <tr>
                             <th class="text-left">id</th>
@@ -116,11 +116,11 @@ definePageMeta({
           </td>
                         </tr>
                     </tbody>
-                </v-table> -->
-<h1>This ia ROSETECH DASHBOARD !</h1>
+                </v-table>
+<!-- <h1>This ia ROSETECH DASHBOARD !</h1> -->
 
 <!-- <button v-if="LoggenIn" @click="handlesignOut">Sign Out</button> -->
-            <!-- </UiChildCard>
+            </UiChildCard>
         </v-col>
-</v-row> -->
+</v-row>
 </template>
