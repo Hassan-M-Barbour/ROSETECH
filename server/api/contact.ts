@@ -1,7 +1,7 @@
 // Add resend module and create a new instance with our API Key
 import { Resend } from "resend";
-const resend = new Resend(process.env.RESEND_API_KEY);
-//const resend = new Resend("re_848rhH6R_3pTrrCysSvkyGvxMPWPsJ7E5");
+//const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_848rhH6R_3pTrrCysSvkyGvxMPWPsJ7E5");
 
 // Event Handler Function
 export default defineEventHandler(async (event) => {
