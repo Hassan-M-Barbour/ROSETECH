@@ -22,7 +22,7 @@
         // The need to stringify objects to JSON when sending it to an server API
         body: JSON.stringify({
           name: name.value,
-          mail: email.value,
+          email: email.value,
 		  subject:subject.value,
 		  phone:phone.value,
           message: message.value
