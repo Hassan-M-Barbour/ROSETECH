@@ -39,7 +39,18 @@ export default defineNuxtConfig({
  
   
   
-  modules: ["@nuxtjs/tailwindcss", 'nuxt-resend', '@nuxtjs/color-mode', "nuxt-gtag"],
+  modules: ["@nuxtjs/tailwindcss", 'nuxt-resend', '@nuxtjs/color-mode', "nuxt-gtag",'@sidebase/nuxt-auth'],
+ 
+  typescript: {
+    shim: false
+  },
+  auth: {
+    isEnabled: true,
+    baseURL: process.env.AUTH_ORIGIN,
+    provider: {
+      type: 'authjs'
+    },
+
   build: {
     transpile: ["vuetify"],
   },

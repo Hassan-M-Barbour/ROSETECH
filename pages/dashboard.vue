@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import UiChildCard from '~/components/shared/UiChildCard.vue';
 
-// const { status, signOut } = useAuth()
+const { status, signOut } = useAuth()
 
-// const LoggenIn = computed(() => status.value === "authenticated")
+const LoggenIn = computed(() => status.value === "authenticated")
 
-// async function handlesignOut(){
-//   await signOut()
-// }
+async function handlesignOut(){
+  await signOut()
+}
 // const contacts = ref(null);
 // const contact = ref(null);
 // const email = ref(null);
@@ -79,6 +79,10 @@ definePageMeta({
   layout: 'dashboard',
   //middleware : ['auth']
 })
+
+function useAuth(): { status: any; signOut: any; } {
+  throw new Error('Function not implemented.');
+}
 </script>
 
 
@@ -122,7 +126,7 @@ definePageMeta({
                 </v-table>
 <!-- <h1>This ia ROSETECH DASHBOARD !</h1> -->
 
-<!-- <button v-if="LoggenIn" @click="handlesignOut">Sign Out</button> -->
+<button v-if="LoggenIn" @click="handlesignOut">Sign Out</button>
             </UiChildCard>
         </v-col>
 </v-row>
