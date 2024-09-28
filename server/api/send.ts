@@ -11,20 +11,20 @@ export default defineEventHandler(async (event) => {
   const { name, email, message } = await readBody(event);
 
   try {
-//     var myArray = ['Axel', 'Matelda']; 
-// var rand = myArray[(Math.random() * myArray.length) | 0]
-// //console.log(rand)
-//     await  $fetch("/api/addContact", {
-//       method: "POST",
-//       body: {
-//         name: name,
-//         email: email,
-//         message:message,
-//         subject:"",
-//         phone:"",
-//    employee:rand,
-//       },
-//     });
+    var myArray = ['Axel', 'Matelda']; 
+var rand = myArray[(Math.random() * myArray.length) | 0]
+//console.log(rand)
+    await  $fetch("/api/addContact", {
+      method: "POST",
+      body: {
+        name: name,
+        email: email,
+        message:message,
+        subject:"",
+        phone:"",
+   employee:rand,
+      },
+    });
     await resend.emails.send({
       // We can use one of our emails as the sender
       from: "Acme <onboarding@resend.dev>",

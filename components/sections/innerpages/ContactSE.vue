@@ -5,7 +5,7 @@
   const name = ref('')
   const email = ref('')
   const subject = ref('')
-  const telephone = ref('')
+  const phone = ref('')
   const message = ref('')
   
   async function onSubmit(){
@@ -24,7 +24,7 @@
           name: name.value,
           mail: email.value,
 		  subject:subject.value,
-		  telephone:telephone.value,
+		  phone:phone.value,
           message: message.value
         }),
        
@@ -34,7 +34,7 @@
         email.value = '',
         message.value = '',
 		subject.value = '',
-		telephone.value = '',
+		phone.value = '',
         console.log('email sent!')
       })
     
@@ -75,7 +75,7 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
-									<input name="form_phone" v-model="telephone" class="form-control" type="text" placeholder="Telefon" required>
+									<input name="form_phone" v-model="phone" class="form-control" type="text" placeholder="Telefon" required>
 								</div>
 							</div>
 						</div>

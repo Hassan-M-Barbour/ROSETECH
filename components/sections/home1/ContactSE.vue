@@ -18,7 +18,7 @@
         // The need to stringify objects to JSON when sending it to an server API
         body: JSON.stringify({
           name: name.value,
-          mail: email.value,
+          email: email.value,
           message: message.value
         }),
        
