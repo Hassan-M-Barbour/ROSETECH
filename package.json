@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",
-    "@sidebase/nuxt-auth": "^0.9.3",
+    "@sidebase/nuxt-auth": "0.7.0-rc.0",
     "nuxt-resend": "^0.0.2"
   }
 }
