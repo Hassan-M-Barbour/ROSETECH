@@ -77,7 +77,7 @@ async function deleteContact(id) {
 definePageMeta({
   
   layout: 'dashboard',
-  //middleware : ['auth']
+  middleware : ['auth']
 })
 
 function useAuth(): { status: any; signOut: any; } {
