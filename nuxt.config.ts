@@ -50,7 +50,7 @@ export default defineNuxtConfig({
     provider: {
       type: 'authjs'
     },
-
+  },
   build: {
     transpile: ["vuetify"],
   },
@@ -59,5 +59,5 @@ export default defineNuxtConfig({
     id: 'G-J9F6ZT1H5X'
   } ,
     
-  
+
 })
