@@ -50,6 +50,9 @@ export default defineNuxtConfig({
     provider: {
       type: 'authjs'
     },
+    globalAppMiddleware: {
+      isEnabled: true
+    }
   },
   build: {
     transpile: ["vuetify"],
