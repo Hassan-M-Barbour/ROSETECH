@@ -46,7 +46,8 @@ export default defineNuxtConfig({
   },
   auth: {
    // isEnabled: true,
-    baseURL: process.env.AUTH_ORIGIN,
+    //baseURL: process.env.AUTH_ORIGIN,
+    baseURL: 'http://rosetech.pages.dev',
     provider: {
       type: 'authjs'
     },
