@@ -39,22 +39,12 @@ export default defineNuxtConfig({
  
   
   
-  modules: ["@nuxtjs/tailwindcss", 'nuxt-resend', '@nuxtjs/color-mode', "nuxt-gtag",'@sidebase/nuxt-auth'],
+  modules: ["@nuxtjs/tailwindcss", 'nuxt-resend', '@nuxtjs/color-mode', "nuxt-gtag"],
  
   typescript: {
     shim: false
   },
-  auth: {
-    isEnabled: true,
-    //baseURL: process.env.AUTH_ORIGIN,
-    baseURL: 'http://rosetech.pages.dev',
-    // provider: {
-    //   type: 'authjs'
-    // },
-    // globalAppMiddleware: {
-    //   isEnabled: true
-    // }
-  },
+  
   build: {
     transpile: ["vuetify"],
   },
