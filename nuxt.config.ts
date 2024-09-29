@@ -45,11 +45,11 @@ export default defineNuxtConfig({
     shim: false
   },
   auth: {
-    // isEnabled: true,
-    // baseURL: process.env.AUTH_ORIGIN,
-    // provider: {
-    //   type: 'authjs'
-    // },
+   // isEnabled: true,
+    baseURL: process.env.AUTH_ORIGIN,
+    provider: {
+      type: 'authjs'
+    },
     // globalAppMiddleware: {
     //   isEnabled: true
     // }
