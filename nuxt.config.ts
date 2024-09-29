@@ -45,12 +45,12 @@ export default defineNuxtConfig({
     shim: false
   },
   auth: {
-   // isEnabled: true,
+    isEnabled: true,
     //baseURL: process.env.AUTH_ORIGIN,
     baseURL: 'http://rosetech.pages.dev',
-    provider: {
-      type: 'authjs'
-    },
+    // provider: {
+    //   type: 'authjs'
+    // },
     // globalAppMiddleware: {
     //   isEnabled: true
     // }
