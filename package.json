@@ -14,13 +14,13 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "^3.13.0",
     "nuxt-gtag": "^3.0.1",
+    "nuxt-security": "^2.0.0",
     "nuxt-swiper": "^1.2.2",
     "vue": "latest",
     "vue-router": "latest",
     "vuetify": "^3.7.2"
   },
   "devDependencies": {
-    "@kgierke/nuxt-basic-auth": "^1.6.0",
     "@mdi/font": "^7.4.47",
     "nuxt-resend": "^0.0.2"
   }

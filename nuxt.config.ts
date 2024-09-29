@@ -39,21 +39,25 @@ export default defineNuxtConfig({
  
   
   
-  modules: ["@nuxtjs/tailwindcss", 'nuxt-resend', '@nuxtjs/color-mode', "nuxt-gtag","@kgierke/nuxt-basic-auth"],
- 
-  basicAuth: {
-    enabled: true,
-    users: [
-      {
-        username: "test@email.com",
-        password: "pass",
-      },
-    ],
-    // Optional: Delimiter for users string
-    // usersDelimiter: ",",
-    // Optional: Whitelist routes
-     allowedRoutes: ["/api/.*","/"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    'nuxt-resend',
+    '@nuxtjs/color-mode',
+    "nuxt-gtag",
+    "nuxt-security"
+  ],
+  security: {
+    
+     basicAuth : {
+      exclude: ['/'],
+      include: ['/dashboard'],
+      name: 'test',
+      pass: 'test',
+      enabled: true,
+      message: 'hello test'
+    }
   },
+  
   build: {
     transpile: ["vuetify"],
   },
