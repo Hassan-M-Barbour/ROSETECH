@@ -47,7 +47,7 @@ const userprofile = ref([
         <!-- <v-btn block color="primary" class="mt-4 py-4"  @click="logout" >Logout</v-btn> -->
 
         <!-- <button color="primary" class="mt-4 py-4" >Logout</button> -->
-        <NuxtLink color="primary" class="mt-4 py-4" to="/logout" >User Profile</NuxtLink>
+        <NuxtLink color="primary" class="mt-4 py-4" to="/logout" >Logout</NuxtLink><br>
         <NuxtLink color="primary" class="mt-4 py-4" to="/profile" >User Profile</NuxtLink>
       </v-list>
     </v-sheet>
