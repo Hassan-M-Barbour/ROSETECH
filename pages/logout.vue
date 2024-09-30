@@ -3,6 +3,10 @@ const hanko = useHanko()
 function logout() {
   hanko!.user.logout()
 }
+
+definePageMeta({
+layout:'blank'
+})
 </script>
 <template>
   <button @click="logout">
