@@ -1,9 +1,9 @@
 <script setup>
 
-const hanko = useHanko()
-function logout() {
-  hanko!.user.logout()
-}
+// const hanko = useHanko()
+// function logout() {
+//   hanko!.user.logout();
+// }
 
 
 // const {signOut} = useAuth()
@@ -44,7 +44,7 @@ const userprofile = ref([
         <!-- <v-list-item class="py-2  mb-2" v-for="(item, i) in userprofile" :key="i" :value="item" :title="item.title"
           :subtitle="item.desc" rounded="md">
         </v-list-item> -->
-        <v-btn block color="primary" class="mt-4 py-4"  @click="logout" >Logout</v-btn>
+        <!-- <v-btn block color="primary" class="mt-4 py-4"  @click="logout" >Logout</v-btn> -->
 
         <NuxtLink color="primary" class="mt-4 py-4" to="/profile" >User Profile</NuxtLink>
       </v-list>
