@@ -77,12 +77,13 @@ async function deleteContact(id) {
 definePageMeta({
   
   layout: 'dashboard',
+  middleware: ["hanko-logged-in"]
  // middleware : ['auth']
 })
 
-function useAuth(): { status: any; signOut: any; } {
-  throw new Error('Function not implemented.');
-}
+// function useAuth(): { status: any; signOut: any; } {
+//   throw new Error('Function not implemented.');
+// }
 </script>
 
 

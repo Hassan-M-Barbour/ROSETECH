@@ -44,19 +44,24 @@ export default defineNuxtConfig({
     'nuxt-resend',
     '@nuxtjs/color-mode',
     "nuxt-gtag",
-    "nuxt-security"
+    "@nuxtjs/hanko"
   ],
-  security: {
-    
-     basicAuth : {
-      exclude: ['/'],
-      include: ['/dashboard'],
-      name: 'test',
-      pass: 'test',
-      enabled: true,
-      message: 'hello test'
-    }
+  hanko: {
+    apiURL: process.env.NUXT_PUBLIC_HANKO_API_URL,
+    registerComponents: true
   },
+  // security: {
+    
+  //    basicAuth : {
+  //     exclude: ['/'],
+  //     include: ['/dashboard'],
+  //     name: 'test',
+  //     pass: 'test',
+  //     enabled: true,
+  //     message: 'hello test'
+  //   },
+    
+  // },
   
   build: {
     transpile: ["vuetify"],
