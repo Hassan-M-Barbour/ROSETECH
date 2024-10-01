@@ -2969,6 +2969,7 @@ Main Header
 }
 
 .main-menu .navigation>li.dropdown>a:after {
+  text-decoration: none;
   content: "\f107";
   position: absolute;
   right: 0;
