@@ -3030,6 +3030,7 @@ Main Header
 }
 
 .main-menu .navigation>li>ul>li>a {
+  text-decoration: none;
   position: relative;
   display: block;
   padding: 10px 0px;
