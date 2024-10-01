@@ -12,7 +12,11 @@ definePageMeta({
 </template> -->
 
 <script setup lang="ts">
-function afterLogin() {
+
+
+
+async function afterLogin() {
+  
  navigateTo("/dashboard");
 }
 
