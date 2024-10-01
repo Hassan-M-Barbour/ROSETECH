@@ -2986,6 +2986,7 @@ Main Header
 .main-menu .navigation>li.dropdown>a {
   padding-right: 14px;
   margin-right: -14px;
+  text-decoration: none;
 }
 
 .main-menu .navigation>li.dropdown>a:after {
