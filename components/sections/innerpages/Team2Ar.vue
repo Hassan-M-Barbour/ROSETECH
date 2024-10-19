@@ -182,7 +182,7 @@
               <figure class="image">
                 <!-- <NuxtLink to="/page-team-details"> -->
 
-                <img src="/images/resource/hanin.jpg" alt="" />
+                <img src="/hanin.jpg" alt="" />
                 <!-- </NuxtLink> -->
               </figure>
               <!-- <div class="social-links">
