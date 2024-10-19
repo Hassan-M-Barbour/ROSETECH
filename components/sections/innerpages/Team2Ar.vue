@@ -181,6 +181,7 @@
             <div class="image-box">
               <figure class="image">
                 <!-- <NuxtLink to="/page-team-details"> -->
+
                 <img src="/images/resource/hanin.jpg" alt="" />
                 <!-- </NuxtLink> -->
               </figure>
