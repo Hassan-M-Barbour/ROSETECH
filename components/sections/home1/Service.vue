@@ -49,7 +49,7 @@
           <div class="inner-box">
             <div class="image-box">
               <figure class="image">
-                <img src="/images/resource/graphic design.jpg" alt="" />
+                <img src="/images/resource/graphic-design.jpg" alt="" />
               </figure>
             </div>
             <div class="content-box">
