@@ -2891,9 +2891,16 @@ Main Header
 }
 
 .main-menu .navigation {
-  display: none;
+
   position: relative;
   margin: 0px;
+}
+
+@media only screen and (max-width: 991.98px) {
+  .main-menu .navigation {
+
+    display: none;
+  }
 }
 
 .main-menu .navigation>li {
