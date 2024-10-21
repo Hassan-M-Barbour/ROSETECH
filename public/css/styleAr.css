@@ -5821,11 +5821,11 @@ sec-titleArAr.text-center h2:before {
   transition: all 300ms ease;
 }
 
-.service-block .inner-box .content-box {
+.service-blockAr .inner-boxAr .content-boxAr {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
-  right: 20px;
+  left: 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
