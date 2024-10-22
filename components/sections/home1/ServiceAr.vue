@@ -137,13 +137,10 @@
             <div class="hover-content">
               <i class="icon flaticon-visitor"></i>
               <h5 class="title">
-                <NuxtLink to="mobile-apps-development">
-                  الأمن السيبراني</NuxtLink
-                >
+                <NuxtLink to="cyber-security"> الأمن السيبراني</NuxtLink>
               </h5>
               <div class="text">
-                قم بتحويل تواجدك على الهاتف المحمول من خلال خدمات تطوير تطبيقات
-                الهاتف المحمول السلسة لدينا....
+                احمِ أعمالك من التهديدات بحلول أمن سيبراني متقدمة...
               </div>
             </div>
           </div>
@@ -163,13 +160,11 @@
             <div class="hover-content">
               <i class="icon flaticon-visitor"></i>
               <h5 class="title">
-                <NuxtLink to="mobile-apps-development">
-                  تحسين محركات البحث</NuxtLink
-                >
+                <NuxtLink to="seo"> تحسين محركات البحث</NuxtLink>
               </h5>
               <div class="text">
-                قم بتحويل تواجدك على الهاتف المحمول من خلال خدمات تطوير تطبيقات
-                الهاتف المحمول السلسة لدينا....
+                حقق أعلى التصنيفات وزد نموك باستراتيجيات SEO المتخصصة التي تعزز
+                ظهورك وتتجاوز منافسيك...
               </div>
             </div>
           </div>

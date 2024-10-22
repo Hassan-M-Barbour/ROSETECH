@@ -9,7 +9,7 @@
             <div class="sidebar-widget service-sidebar-single">
               <div class="sidebar-service-list">
                 <ul>
-                  <li class="current">
+                  <li>
                     <NuxtLink to="website-development" class="current"
                       ><i class="fas fa-angle-right"></i
                       ><span>Web Apps Development</span></NuxtLink
@@ -28,12 +28,12 @@
                     >
                   </li>
                   <li>
-                    <NuxtLink to="mobile-apps-development"
+                    <NuxtLink to="ui-ux-design"
                       ><i class="fas fa-angle-right"></i
                       ><span>Mobile Apps Development</span></NuxtLink
                     >
                   </li>
-                  <li>
+                  <li class="current">
                     <NuxtLink to="cyber-security"
                       ><i class="fas fa-angle-right"></i
                       ><span>Cyber Security</span></NuxtLink
@@ -79,15 +79,14 @@
         <!--Start Services Details Content-->
         <div class="col-xl-8 col-lg-8">
           <div class="services-details__content">
-            <img src="/images/resource/web-app.jpg" alt="" />
-            <h3 class="mt-4">Web Applications Development</h3>
+            <img src="/images/resource/cypersecurity.jpg" alt="" />
+            <h3 class="mt-4">Cyber Security</h3>
             <p style="text-align: justify">
-              Experience comprehensive web app development services that
-              seamlessly integrate into your digital ecosystem. Our seasoned
-              team of developers brings your ideas to life, delivering robust
-              and scalable web applications tailored to meet your unique
-              business requirements. Let us be the backbone of your online
-              success.
+              Our comprehensive cybersecurity solutions protect your business
+              from evolving digital threats. We safeguard your data, secure your
+              network, and ensure that your systems are resilient against
+              cyberattacks. With our expert services, you can confidently focus
+              on your business while we handle your security needs.
             </p>
             <div class="content mt-40">
               <!-- <div class="text">

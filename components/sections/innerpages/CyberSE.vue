@@ -9,34 +9,34 @@
             <div class="sidebar-widget service-sidebar-single">
               <div class="sidebar-service-list">
                 <ul>
-                  <li class="current">
+                  <li>
                     <NuxtLink to="website-development" class="current"
                       ><i class="fas fa-angle-right"></i
-                      ><span>Web Apps Development</span></NuxtLink
+                      ><span>Webbutveckling</span></NuxtLink
                     >
                   </li>
                   <li>
                     <NuxtLink to="graphic-design"
                       ><i class="fas fa-angle-right"></i
-                      ><span>Graphic Designing</span></NuxtLink
+                      ><span>Grafisk Design</span></NuxtLink
                     >
                   </li>
                   <li>
                     <NuxtLink to="ui-ux-design"
                       ><i class="fas fa-angle-right"></i
-                      ><span>UI / UX Designing</span></NuxtLink
+                      ><span>UI / UX Design</span></NuxtLink
                     >
                   </li>
                   <li>
                     <NuxtLink to="mobile-apps-development"
                       ><i class="fas fa-angle-right"></i
-                      ><span>Mobile Apps Development</span></NuxtLink
+                      ><span>Mobilapplikationer</span></NuxtLink
                     >
                   </li>
-                  <li>
+                  <li class="current">
                     <NuxtLink to="cyber-security"
                       ><i class="fas fa-angle-right"></i
-                      ><span>Cyber Security</span></NuxtLink
+                      ><span>Cybersäkerhetstjänster</span></NuxtLink
                     >
                   </li>
                   <li>
@@ -79,15 +79,14 @@
         <!--Start Services Details Content-->
         <div class="col-xl-8 col-lg-8">
           <div class="services-details__content">
-            <img src="/images/resource/web-app.jpg" alt="" />
-            <h3 class="mt-4">Web Applications Development</h3>
+            <img src="/images/resource/cypersecurity.jpg" alt="" />
+            <h3 class="mt-4">Cybersäkerhetstjänster</h3>
             <p style="text-align: justify">
-              Experience comprehensive web app development services that
-              seamlessly integrate into your digital ecosystem. Our seasoned
-              team of developers brings your ideas to life, delivering robust
-              and scalable web applications tailored to meet your unique
-              business requirements. Let us be the backbone of your online
-              success.
+              Våra omfattande cybersäkerhetslösningar skyddar ditt företag mot
+              ständigt föränderliga digitala hot. Vi säkrar din data, skyddar
+              ditt nätverk och säkerställer att dina system är motståndskraftiga
+              mot cyberattacker. Med våra experttjänster kan du tryggt fokusera
+              på din verksamhet medan vi tar hand om säkerheten.
             </p>
             <div class="content mt-40">
               <!-- <div class="text">

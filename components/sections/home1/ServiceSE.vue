@@ -139,13 +139,13 @@
             <div class="hover-content">
               <i class="icon flaticon-visitor"></i>
               <h5 class="title">
-                <NuxtLink to="mobile-apps-development"
+                <NuxtLink to="cyber-security"
                   >Cyber Security <br />&nbsp;</NuxtLink
                 >
               </h5>
               <div class="text">
-                Förvandla er mobila upplevelse med våra sömlösa
-                mobilapputvecklingstjänster...
+                Skydda ditt företag från hot med våra experttjänster inom
+                cybersäkerhet...
               </div>
             </div>
           </div>
@@ -165,13 +165,12 @@
             <div class="hover-content">
               <i class="icon flaticon-visitor"></i>
               <h5 class="title">
-                <NuxtLink to="mobile-apps-development"
-                  >SEO <br />&nbsp;</NuxtLink
-                >
+                <NuxtLink to="seo">SEO <br />&nbsp;</NuxtLink>
               </h5>
               <div class="text">
-                Förvandla er mobila upplevelse med våra sömlösa
-                mobilapputvecklingstjänster...
+                Nå topprankningar och öka tillväxten med våra experttjänster
+                inom SEO för att förbättra synlighet och överträffa
+                konkurrenter...
               </div>
             </div>
           </div>

@@ -7,42 +7,44 @@
           <div class="service-sidebar">
             <!--Start Services Details Sidebar Single-->
             <div class="sidebar-widget service-sidebar-single">
-              <div class="sidebar-service-list">
+              <div class="sidebar-service-listAr">
                 <ul>
-                  <li class="current">
+                  <li>
                     <NuxtLink to="website-development" class="current"
                       ><i class="fas fa-angle-right"></i
-                      ><span>Web Apps Development</span></NuxtLink
+                      ><span>تطوير تطبيقات الويب</span></NuxtLink
                     >
                   </li>
                   <li>
                     <NuxtLink to="graphic-design"
                       ><i class="fas fa-angle-right"></i
-                      ><span>Graphic Designing</span></NuxtLink
+                      ><span>تصميم الجرافيك</span></NuxtLink
                     >
                   </li>
                   <li>
                     <NuxtLink to="ui-ux-design"
                       ><i class="fas fa-angle-right"></i
-                      ><span>UI / UX Designing</span></NuxtLink
+                      ><span
+                        >تصميم واجهة المستخدم وتجربة المستخدم</span
+                      ></NuxtLink
                     >
                   </li>
                   <li>
                     <NuxtLink to="mobile-apps-development"
                       ><i class="fas fa-angle-right"></i
-                      ><span>Mobile Apps Development</span></NuxtLink
+                      ><span>تطوير تطبيقات الهاتف المحمول</span></NuxtLink
                     >
                   </li>
                   <li>
                     <NuxtLink to="cyber-security"
                       ><i class="fas fa-angle-right"></i
-                      ><span>Cyber Security</span></NuxtLink
+                      ><span>الأمن السيبراني </span></NuxtLink
                     >
                   </li>
-                  <li>
+                  <li class="current">
                     <NuxtLink to="seo"
                       ><i class="fas fa-angle-right"></i
-                      ><span>SEO</span></NuxtLink
+                      ><span> تحسين محركات البحث</span></NuxtLink
                     >
                   </li>
                 </ul>
@@ -51,43 +53,38 @@
               <div class="service-details-help">
                 <div class="help-shape-1"></div>
                 <div class="help-shape-2"></div>
-                <h2 class="help-title">
-                  Contact with <br />
-                  us for any <br />
-                  advice
-                </h2>
+                <h2 class="help-title">انصل بنا للحصول على اي نصيحة</h2>
                 <div class="help-icon">
                   <span class="lnr-icon-phone-handset"></span>
                 </div>
                 <div class="help-contact">
-                  <p>Need help? Talk to an expert</p>
-                  <NuxtLink to="tel:+46 7 35 35 34 34">+46735353434</NuxtLink>
+                  <p>هل تحتاج إلى مساعدة؟ تحدث إلى أحد الخبراء</p>
+                  <NuxtLink to="tel:+46 7 35 35 34 34"
+                    ><bdi>+46735353434</bdi></NuxtLink
+                  >
                 </div>
               </div>
 
               <!--Start Services Details Sidebar Single-->
               <!-- <div class="sidebar-widget service-sidebar-single mt-4">
-                  <div class="service-sidebar-single-btn wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1200m">
-                    <NuxtLink to="#" class="theme-btn btn-style-one d-grid"><span class="btn-title"><span class="fas fa-file-pdf"></span> download pdf file</span></NuxtLink>
-                  </div>
-                </div> -->
+    <div class="service-sidebar-single-btn wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1200m">
+      <NuxtLink to="#" class="theme-btn btn-style-one d-grid"><span class="btn-title"><span class="fas fa-file-pdf"></span> download pdf file</span></NuxtLink>
+    </div>
+  </div> -->
             </div>
             <!--End Services Details Sidebar-->
           </div>
         </div>
-
         <!--Start Services Details Content-->
         <div class="col-xl-8 col-lg-8">
           <div class="services-details__content">
-            <img src="/images/resource/web-app.jpg" alt="" />
-            <h3 class="mt-4">Web Applications Development</h3>
+            <img src="/images/resource/seo.jpg" alt="" />
+            <h3 class="mt-4">تحسين محركات البحث</h3>
             <p style="text-align: justify">
-              Experience comprehensive web app development services that
-              seamlessly integrate into your digital ecosystem. Our seasoned
-              team of developers brings your ideas to life, delivering robust
-              and scalable web applications tailored to meet your unique
-              business requirements. Let us be the backbone of your online
-              success.
+              تم تصميم خدمات تحسين محركات البحث لدينا لزيادة ظهور موقعك على
+              الإنترنت، وزيادة حركة المرور العضوية، وتعزيز نمو أعمالك بشكل
+              مستدام. من خلال استراتيجيات مخصصة، نضمن تصدر موقعك لنتائج محركات
+              البحث وجذب المزيد من العملاء المحتملين، والتفوق على منافسيك.
             </p>
             <div class="content mt-40">
               <!-- <div class="text">
@@ -134,3 +131,8 @@ const handleClick = (key) => {
   }
 };
 </script>
+<style scoped>
+.fa-angle-right::before {
+  content: "\f053" !important;
+}
+</style>
