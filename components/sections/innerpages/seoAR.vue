@@ -78,7 +78,7 @@
         <!--Start Services Details Content-->
         <div class="col-xl-8 col-lg-8">
           <div class="services-details__content">
-            <img src="/images/resource/seo.jpg" alt="" />
+            <img src="/images/resource/seo-new.jpg" alt="" />
             <h3 class="mt-4">تحسين محركات البحث</h3>
             <p style="text-align: justify">
               تم تصميم خدمات تحسين محركات البحث لدينا لزيادة ظهور موقعك على
