@@ -175,7 +175,7 @@
             <div class="image-box">
               <figure class="image">
                 <!-- <NuxtLink to="/page-team-details"> -->
-                <img src="/images/resource/haninz.jpg" alt="" />
+                <img src="/images/resource/haninzy.jpg" alt="" />
                 <!-- </NuxtLink> -->
               </figure>
               <!-- <div class="social-links">
