@@ -150,7 +150,7 @@
           <div class="inner-box">
             <div class="image-box">
               <figure class="image">
-                <img src="/images/resource/seo.jpg" alt="" />
+                <img src="/images/resource/seo-new.jpg" alt="" />
               </figure>
             </div>
             <div class="content-box">
